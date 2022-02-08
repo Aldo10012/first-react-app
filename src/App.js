@@ -3,6 +3,7 @@ import './App.css';
 
 import Title from './components/Title.js';
 import POPOSList from './components/POPOSList';
+import Footer from './components/Footer'
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       <Title />
       <POPOSList />
-
+      <Footer />
     </div>
   );
 }
