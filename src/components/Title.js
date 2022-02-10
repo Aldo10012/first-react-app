@@ -1,14 +1,20 @@
 // src/Title.js
 import './Title.css';
-
-let imgUrl = 'https://pbs.twimg.com/profile_images/592137994837958656/yqWFLNmz_400x400.png'
+import { NavLink } from 'react-router-dom'
 
 function Title() {
     return (
       <div className="Title">
         <h1>SFPOPOS</h1>
 			  <div className="Title-Subtitle">San Franciscos Privately Owned Public Spaces</div>
-        {/* <img src={imgUrl} /> */}
+        <div>
+          <NavLink className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" } to="/">
+            List
+          </NavLink>
+          <NavLink className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }to="/about">
+            About
+          </NavLink>
+        </div>
     </div>
     )
   }
